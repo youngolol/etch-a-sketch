@@ -1,0 +1,15 @@
+.grid {
+    display: grid;
+    height: 40rem;  
+    width: 40rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#boxes {
+    border: solid;
+    height: 9rem;
+    width: 9rem;
+}
