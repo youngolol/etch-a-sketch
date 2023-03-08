@@ -1,11 +1,16 @@
 .grid {
-    display: grid;
-    height: 40rem;  
+    height: 10rem;  
     width: 40rem;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #boxes {
@@ -13,3 +18,4 @@
     height: 9rem;
     width: 9rem;
 }
+
