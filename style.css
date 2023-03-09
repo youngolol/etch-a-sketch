@@ -1,6 +1,6 @@
 .grid {
     height: 10rem;  
-    width: 40rem;
+    width: 35rem;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -13,9 +13,10 @@
     transform: translate(-50%, -50%);
 }
 
-#boxes {
+.class {
     border: solid;
-    height: 9rem;
-    width: 9rem;
+    height: 2rem;
+    width: 2rem;
+    border-width: 0.5px;
 }
 

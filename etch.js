@@ -1,16 +1,22 @@
 const grid = document.querySelector(".grid");
 
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < 256; i++) {
   let multiply = document.createElement("div");
-  multiply.classList.add("item-" + (i + 1));
-  multiply.setAttribute("id", "boxes");
+  multiply.classList.add("class");
+  multiply.setAttribute("id", `box${i + 1}`);
   grid.appendChild(multiply);
 }
 
-document.getElementById("boxes").addEventListener("mouseover", function () {
-  document.getElementById("boxes").style.backgroundColor = "green";
-});
+// document.querySelectorAll(".items").forEach((item) => {
+//   item.addEventListener("mouseover", (event) => {
+//     item.style.backgroundColor = "black";
+//   });
+// });
 
-document.getElementById("boxes").addEventListener("mouseout", function () {
-  document.getElementById("boxes").style.backgroundColor = "red";
+document.getElementById("box").addEventListener("mouseover", (event) => {
+  const selectedId = event.target.id;
+  console.log(selectedId);
+  const selectedDiv = document.getElementById(selectedId);
+  console.log(selectedDiv);
+  selectedDiv.style.backgroundColor = "black";
 });
